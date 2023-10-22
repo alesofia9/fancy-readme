@@ -1,4 +1,4 @@
-// Creating a function that returns a license badge based on which license is passed in
+// Lines 2 - 42 generate a 'License' section of the README if user selects a license in the questions. If no license is selected, README file will be generated without this section.//
 function renderLicenseBadge(license) {
     if (license !== "none") {
       return `![Github license](https://img.shields.io/badge/license-${license}-blue.svg)`;
@@ -40,7 +40,7 @@ function renderLicenseTOC(license) {
     }
    }
 
-//Creating a function to generate markdown for README
+//Function runs the markdown magic for the README file.//
 function generateMarkdown(data) {
     return `
     # ${data.title}
@@ -77,7 +77,7 @@ function generateMarkdown(data) {
   
     ## [Contributing](#table-of-contents)
     
-    ${renderContributingSection(data.contribute)}
+    ${data.contributing}
   
     ## [Tests](#table-of-contents)
   
@@ -91,5 +91,5 @@ function generateMarkdown(data) {
   `;
   }
   
-  
+  //Executes Markdown.//
   module.exports = generateMarkdown;

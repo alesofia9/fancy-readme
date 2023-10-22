@@ -6,7 +6,6 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-
   "repository": {
     "type": "git",
     "url": "git+https://github.com/alesofia9/fancy-readme.git"
@@ -18,6 +17,6 @@
   },
   "homepage": "https://github.com/alesofia9/fancy-readme#readme",
   "dependencies": {
-    "inquirer": "^9.2.11"
+    "inquirer": "^8.2.4"
   }
 }

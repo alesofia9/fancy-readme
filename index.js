@@ -1,13 +1,15 @@
+//Files and paths needed to help application generate README file.//
 const fs = require('fs');
 const inquirer = require('inquirer');
 const path = require('path');
 const generateMarkdown = require('./utils/generateMarkdown');
 
+//Promts/questions for user input.//
 const questions = [
     {
         type: 'input',
         name: 'title',
-        message: 'Howdy! Please type your Project title.',
+        message: '😁 Howdy! Please type your Project title.',
         validate: titleInput => {
             if (titleInput) {
             return true;
@@ -21,7 +23,7 @@ const questions = [
     {
         type: 'input',
         name: 'description',
-        message: 'Awesome title! Type a description of this project. What is the purpose of this Project?',
+        message: '🤩 Awesome title! Type a description of this project. What is the purpose of this Project?',
         validate: descriptionInput => {
             if (descriptionInput) {
             return true;
@@ -35,7 +37,7 @@ const questions = [
     {
         type: 'input',
         name: 'installation',
-        message: 'Provide installation instructions for your project. If no installation is required, enter the URL to your deployed Project for user interaction.',
+        message: '📖 Provide installation instructions for your project. If no installation is required, enter the URL to your deployed Project.',
         validate: installInput => {
             if (installInput) {
             return true;
@@ -49,7 +51,7 @@ const questions = [
     {
         type: 'input',
         name: 'usage',
-        message: 'Halfway there! Give instructions for the user on how to utilize your Project. Highlight any fancy featuers or languages utilized with your Project.',
+        message: '🤓 Halfway there! Give instructions for the user on how to utilize your Project. Highlight any fancy features or languages utilized with your Project.',
         validate: usageInput => {
             if (usageInput) {
                 return true;
@@ -70,7 +72,7 @@ const questions = [
     {
         type: 'input',
         name: 'contributing',
-        message: 'Add any friends or URL sites that gave you support or inspiration!',
+        message: '👨‍💻👩‍💻 Add any friends or URL sites that gave you support or inspiration!',
         validate: contributingInput => {
             if (contributingInput) {
                 return true;
@@ -84,12 +86,12 @@ const questions = [
     {
         type: 'input',
         name: 'test',
-        message: 'Almost done! Provide any details on how to test your Project.',
+        message: '📚 Almost done! Provide any details on how to test your Project.',
         vaildate: testInput => {
             if (testInput) {
                 return true;
             } else {
-                console.log('Err! Enter your test instructions!');
+                console.log('BONK! Enter your test instructions!');
                 return false;
             }
         }
@@ -98,7 +100,7 @@ const questions = [
     {
         type: 'input',
         name: 'questions',
-        message: 'Last one! Provide your Github username  and email address in case anyone has questions and needs to reach you!',
+        message: '📧 Last one! Provide your Github username  and email address in case anyone has questions and needs to reach you!',
         validate: questionsInput => {
             if (questionsInput) {
                 return true;
@@ -110,39 +112,15 @@ const questions = [
     },
 ];
 
-const writeFile = fileContent => {
-    return new Promise((resolve, reject) => {
-        fs.writeFile('.dist/generated-READEME.md', fileContent, err => {
-            if (err) {
-                reject(err);
-                return;
-            }
-            resolve({
-                ok: true,
-                message: 'Congrats! File created!'
-            });
-        });
-    });
-};
+//Functions below run to create the README file under the 'dist' folder, message tweaked to notify user of successful file creation.//
+function writeToFile(fileName, data) {
+    return fs.writeFileSync(path.join(process.cwd(), fileName), data);
+  }
 
-const init = () => {
-    return inquirer.createPromptModule(questions)
-    .then(reademeData => {
-        return reademeData;
+function init() {
+    inquirer.prompt(questions).then((responses) => {
+      console.log("Congrats!!! Creating Professional README.md File... Check the Dist folder 😉");
+      writeToFile("./dist/README.md", generateMarkdown({ ...responses }));
     });
-};
-
-init ()
-.then(reademeData => {
-    console.log(reademeData);
-    return generateMarkdown(reademeData);
-})
-.then(pageMD => {
-    return writeFile(pageMD);
-})
-.then(writeFileResponse => {
-    console.log(writerFileResponse.message);
-})
-.catch(err => {
-    console.log(err);
-})
+  }
+  init();
