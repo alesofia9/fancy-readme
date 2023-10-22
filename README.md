@@ -1,55 +1,52 @@
-    # FANCY-README
+# FANCY-README
     
-    ![Github license](https://img.shields.io/badge/license-MIT-blue.svg)
+![Github license](https://img.shields.io/badge/license-MIT-blue.svg)
   
-    ## Table-of-Contents
+## Table-of-Contents
   
-    * [Description](#description)
-    * [Installation](#installation)
-    * [Usage](#usage)
+* [Description](#description)
+* [Installation](#installation)
+* [Usage](#usage)
     
-    * [License](#license)
+* [License](#license)
       
-    * [Contributing](#contributing)
-    * [Tests](#tests)
-    * [Questions](#questions)
+* [Contributing](#contributing)
+* [Tests](#tests)
+* [Questions](#questions)
     
-    ## [Description](#table-of-contents)
+## [Description](#table-of-contents)
     
-    To help developers genereate a professional README file for their respoective projects.
+To help developers genereate a professional README file for their respoective projects.
   
-    ## [Installation](#table-of-contents)
+## [Installation](#table-of-contents)
   
-    URL: https://github.com/alesofia9/fancy-readme
+URL: https://github.com/alesofia9/fancy-readme
   
-    ## [Usage](#table-of-contents)
+## [Usage](#table-of-contents)
   
-    Languages: Javascript, NODE.JS, Inquirer, & VS CODE.
+Languages: Javascript, NODE.JS, Inquirer, & VS CODE.
     
-    Want to add screenshots in this section to give visual examples? Check out this site to learn how!
+Want to add screenshots in this section to give visual examples? Check out this site to learn how!
     
-    [How to add a screenshot in your GitHub readme file?](https://medium.com/analytics-vidhya/how-to-add-a-screenshot-in-your-github-readme-file-176afeb8ad86)
+[How to add a screenshot in your GitHub readme file?](https://medium.com/analytics-vidhya/how-to-add-a-screenshot-in-your-github-readme-file-176afeb8ad86)
     
     
-    ## [License](#table-of-contents)
+## [License](#table-of-contents)
   
-    The application is covered under the following license:
-  
+The application is covered under the following license:
     
-    [MIT](https://choosealicense.com/licenses/MIT)
-      
-      
-  
-    ## [Contributing](#table-of-contents)
+[MIT](https://choosealicense.com/licenses/MIT)
+         
+## [Contributing](#table-of-contents)
     
-    Site: Node.JS - https://nodejs.org/api/modules.html
+Site: Node.JS - https://nodejs.org/api/modules.html
   
-    ## [Tests](#table-of-contents)
+## [Tests](#table-of-contents)
   
-    Open application on VS Code, make sure Open Terminal is utilized along with git.bash
+Open application on VS Code, make sure Open Terminal is utilized along with git.bash
   
-    ## [Questions](#table-of-contents)
+## [Questions](#table-of-contents)
 
-    Contact me if you have any questions:
+Contact me if you have any questions:
 
-    Github: alesofia9 Email: alesofia9@hotmail.com
+Github: alesofia9 Email: alesofia9@hotmail.com
