@@ -24,6 +24,7 @@ To generate your own README, git clone the repo down to your local so you have t
 Run npm install in order to install the following npm package dependencies as specified in the package.json:
 
 -npm init
+
 -npm install inquirer
 
 inquirer will prompt you for your inputs from the command line.
