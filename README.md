@@ -16,15 +16,29 @@
     
 ## [Description](#table-of-contents)
     
-To help developers genereate a professional README file for their respoective projects.
+Developers know that every project needs a README file that stores important information about their projects and/or applications. FANCY-README is a project that will help developers generate a professional README with user input.  
   
 ## [Installation](#table-of-contents)
-  
-URL: https://github.com/alesofia9/fancy-readme
+To generate your own README, git clone the repo down to your local so you have the Node project on your local.
+
+Run npm install in order to install the following npm package dependencies as specified in the package.json:
+
+-npm init
+-npm install inquirer
+
+inquirer will prompt you for your inputs from the command line.
+
+The application will start by running node index.js in the command line. When you run node index.js, the application uses the inquirer package to prompt you in the command line with a series of questions about your Project.
+
+Answer the prompts in your command line to generate the README.
+
+After answering all the prompts, your README file will be named 'README.md' and will be ready for you under the 'Dist' folder.
+
+URL to Repository: https://github.com/alesofia9/fancy-readme
   
 ## [Usage](#table-of-contents)
   
-Languages: Javascript, NODE.JS, Inquirer, & VS CODE.
+Languages and applications included in this project are: Javascript, NODE.JS, Inquirer, & VS CODE.
     
 Want to add screenshots in this section to give visual examples? Check out this site to learn how!
     
@@ -34,19 +48,32 @@ Want to add screenshots in this section to give visual examples? Check out this 
 ## [License](#table-of-contents)
   
 The application is covered under the following license:
+  
     
-[MIT](https://choosealicense.com/licenses/MIT)
-         
+[MIT](https://choosealicense.com/licenses/mit)
+      
 ## [Contributing](#table-of-contents)
-    
+
+Site: npm Docs - https://docs.npmjs.com/cli/v6/commands/npm-install/
+
+Site: npmjs.com - https://www.npmjs.com/package/inquirer
+
+Site: npmjs.com - https://www.npmjs.com/package/inquirer/v/8.2.4
+
+Site: How To Use Inquirer.js - https://javascript.plainenglish.io/how-to-inquirer-js-c10a4e05ef1f
+
+Site: Node.js Documentation - https://nodejs.org/api/modules.html
+
+Site: W3Schools Node.js Tutorial - https://www.w3schools.com/nodejs/
+
 Site: Node.JS - https://nodejs.org/api/modules.html
   
 ## [Tests](#table-of-contents)
   
-Open application on VS Code, make sure Open Terminal is utilized along with git.bash
+Follow the steps mentioned in the section "Installation". Be sure to run the application on VS Code, and note that Open Terminal is utilized along with Git Bash on the ;index.js' file. 
   
 ## [Questions](#table-of-contents)
 
-Contact me if you have any questions:
+Thank you for testing this out! Contact me if you have any questions:
 
 Github: alesofia9 Email: alesofia9@hotmail.com
