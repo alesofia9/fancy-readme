@@ -43,51 +43,51 @@ function renderLicenseTOC(license) {
 //Function runs the markdown magic for the README file.//
 function generateMarkdown(data) {
     return `
-    # ${data.title}
+# ${data.title}
     
-    ${renderLicenseBadge(data.license)}
+${renderLicenseBadge(data.license)}
   
-    ## Table-of-Contents
+## Table-of-Contents
   
-    * [Description](#description)
-    * [Installation](#installation)
-    * [Usage](#usage)
-    ${renderLicenseTOC(data.license)}
-    * [Contributing](#contributing)
-    * [Tests](#tests)
-    * [Questions](#questions)
+* [Description](#description)
+* [Installation](#installation)
+* [Usage](#usage)
+${renderLicenseTOC(data.license)}
+* [Contributing](#contributing)
+* [Tests](#tests)
+* [Questions](#questions)
     
-    ## [Description](#table-of-contents)
+## [Description](#table-of-contents)
     
-    ${data.description}
+${data.description}
   
-    ## [Installation](#table-of-contents)
+## [Installation](#table-of-contents)
   
-    ${data.installation}
+${data.installation}
   
-    ## [Usage](#table-of-contents)
+## [Usage](#table-of-contents)
   
-    ${data.usage}
+${data.usage}
     
-    Want to add screenshots in this section to give visual examples? Check out this site to learn how!
+Want to add screenshots in this section to give visual examples? Check out this site to learn how!
     
-    [How to add a screenshot in your GitHub readme file?](https://medium.com/analytics-vidhya/how-to-add-a-screenshot-in-your-github-readme-file-176afeb8ad86)
+[How to add a screenshot in your GitHub readme file?](https://medium.com/analytics-vidhya/how-to-add-a-screenshot-in-your-github-readme-file-176afeb8ad86)
     
-    ${renderLicenseSection(data.license)}
+${renderLicenseSection(data.license)}
   
-    ## [Contributing](#table-of-contents)
+## [Contributing](#table-of-contents)
     
-    ${data.contributing}
+${data.contributing}
   
-    ## [Tests](#table-of-contents)
+## [Tests](#table-of-contents)
   
-    ${data.test}
+${data.test}
   
-    ## [Questions](#table-of-contents)
+## [Questions](#table-of-contents)
 
-    Contact me if you have any questions:
+Contact me if you have any questions:
 
-    ${data.questions}
+${data.questions}
   `;
   }
   
