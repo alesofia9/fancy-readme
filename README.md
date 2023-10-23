@@ -50,7 +50,7 @@ Want to add screenshots in this section to give visual examples? Check out this 
 The application is covered under the following license:
   
     
-[MIT](https://choosealicense.com/licenses/mit)
+[MIT](https://choosealicense.com/licenses/mit/)
       
 ## [Contributing](#table-of-contents)
 
@@ -70,7 +70,7 @@ Site: Node.JS - https://nodejs.org/api/modules.html
   
 ## [Tests](#table-of-contents)
   
-Follow the steps mentioned in the section "Installation". Be sure to run the application on VS Code, and note that Open Terminal is utilized along with Git Bash on the ;index.js' file. 
+Follow the steps mentioned in the section "Installation". Be sure to run the application on VS Code, and note that Open Terminal is utilized along with Git Bash on the 'index.js' file. 
   
 ## [Questions](#table-of-contents)
 
