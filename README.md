@@ -46,18 +46,17 @@ Want to add screenshots in this section to give visual examples? Check out this 
     
 [How to add a screenshot in your GitHub readme file?](https://medium.com/analytics-vidhya/how-to-add-a-screenshot-in-your-github-readme-file-176afeb8ad86)
 
-The image below shows the application, but you can use the link here to watch a video of it in action: https://watch.screencastify.com/v/JQW0CnEoQmhh0wMCgbUE
+The image below shows the application, but you can use the link here to watch a video of it in action: https://watch.screencastify.com/v/mLCv1q8HRGIRg49VZ9XL
     
-![Alt text](/utils/Screenshot%202023-10-22%20at%208.21.39 PM.png)
+![Alt text](/utils/Screenshot%202023-10-22%20at%209.02.25 PM.png)
 
 
 
 ## [License](#table-of-contents)
   
 The application is covered under the following license:
-  
-    
-[MIT](https://choosealicense.com/licenses/MIT)
+     
+[MIT](https://choosealicense.com/licenses/mit/)
       
 ## [Contributing](#table-of-contents)
     
